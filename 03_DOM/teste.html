@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ola JavaScript</h1>
+    <ul>
+        <li>Algum intem </li>
+        <li>Algum intem 2</li>
+        <li><h3>Testando 1 2 3</h3></li>
+        <li>Algum intem 4</li>
+        <li>Algum intem 3</li>
+    </ul>
+
+    <button onclick="clicou()">Clique</button>
+    <script>
+        function clicou(){
+            const teste = document.querySelector('h1');
+            teste.style.color = 'red';
+
+            const ul = teste.querySelector('ul');
+            ul.children[0].append(' - Teste');
+
+            let newLi = document.createElement('li');
+            newLi.append('Novo item');
+
+            ul.append(newLi);
+        }
+    </script>
+</body>
+</html>
