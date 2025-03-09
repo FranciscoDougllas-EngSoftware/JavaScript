@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tipos de dados</h1>
+
+    <script>
+        const nome = "Francisco";
+        const idade = 23;
+        const altura = 1.75;
+        const casado = false;
+        const bolos = ['chocolate', 'morango', 'limão'];
+        const pessoa = {
+            nome: 'Francisco', 
+            idade: 23, 
+            altura: 1.75, 
+            casado: false
+        };
+
+        document.write(`Nome: ${nome} ${typeof nome}<br>`);
+        document.write(`Idade: ${idade} ${typeof idade}<br>`);
+        document.write(`Altura: ${altura} ${typeof altura}<br>`);
+        document.write(`Casado: ${casado} ${typeof casado}<br>`);
+        document.write(`Bolos: ${bolos} ${typeof bolos}<br>`);
+        document.write(`Pessoa: ${pessoa.nome} ${typeof pessoa}<br>`);
+
+        // Tipos de dados primitivos
+        // string, number, boolean, undefined, null, symbol
+        // Tipos de dados por referência
+        // array, object
+
+        //Tipos Scpecial numbers
+        document.write(`Infinity: ${Infinity} ${typeof Infinity}<br>`);
+        document.write(`-Infinity: ${-Infinity} ${typeof -Infinity}<br>`);
+    </script>
+</body>
+</html>
